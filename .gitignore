@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Output
+output/
+*.docx
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Cache
+.cache/
+.tmp/
+
+# Fontes (arquivos grandes)
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Docs de referência (grandes)
+Docs/Modelo de Diagramação/
+Docs/Estilo de Escrita Andreza Araujo/
+
+# Arquivos temporários
+/tmp/
+*.tmp
+
+# Build
+dist/
+build/
+
+# Test coverage
+coverage/

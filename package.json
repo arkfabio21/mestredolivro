@@ -1,0 +1,58 @@
+{
+  "name": "mestre-do-livro",
+  "version": "1.0.0",
+  "description": "Sistema de escrita de livros com IA - Pipeline completo de concepção à publicação",
+  "main": "src/index.js",
+  "bin": {
+    "mestre-do-livro": "./bin/cli.js",
+    "mdl": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node --test",
+    "lint": "eslint src/",
+    "exemplo": "node scripts/gerar-exemplo-diagramacao.js"
+  },
+  "keywords": [
+    "livro",
+    "escrita",
+    "ia",
+    "automacao",
+    "diagramacao",
+    "docx",
+    "pdf",
+    "publicacao",
+    "claude",
+    "anthropic"
+  ],
+  "author": "Fabio Marques",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiomarques/mestre-do-livro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiomarques/mestre-do-livro/issues"
+  },
+  "homepage": "https://github.com/fabiomarques/mestre-do-livro#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "docx": "^9.5.1",
+    "inquirer": "^9.2.23",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ]
+}
