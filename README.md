@@ -1,6 +1,31 @@
-# Mestre do Livro
+# 📚 Mestre do Livro
 
-Sistema de escrita de livros com IA - Pipeline completo de concepção à publicação.
+[![npm version](https://img.shields.io/npm/v/mestre-do-livro.svg)](https://www.npmjs.com/package/mestre-do-livro)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Sistema completo de escrita de livros com IA** — do conceito inicial à publicação final.
+
+---
+
+## O que é?
+
+O **Mestre do Livro** é uma CLI (Command Line Interface) que automatiza todo o processo de criação de livros não-ficção:
+
+- 🎯 **Estruturação** — Método Snowflake para desenvolver a ideia
+- 🔬 **Pesquisa** — Knowledge base organizada com citações e dados
+- ✍️ **Escrita** — 13 agentes especializados para cada aspecto do livro
+- ✅ **Validação** — Sistema de scoring com 12 frameworks mentais
+- 🧹 **Quality Guard** — Detecção e remoção de vícios de escrita de IA
+- 📄 **Formatação** — Exportação profissional para DOCX/PDF
+
+### Para quem é?
+
+- Autores que querem usar IA de forma estruturada
+- Profissionais criando livros técnicos ou de negócios
+- Coaches e consultores desenvolvendo material próprio
+- Qualquer pessoa que quer escrever um livro com qualidade editorial
+
+---
 
 ## Instalação
 
@@ -127,23 +152,40 @@ meu-livro/
 └── README.md
 ```
 
-## Agentes Disponíveis
+## 🤖 Agentes Especializados
 
-| Agente | Função |
-|--------|--------|
-| Editor-Chefe | Revisão editorial, decisão final |
-| Arquiteto de Conteúdo | Estrutura e fluxo |
-| Narrador Especialista | Storytelling |
-| Pesquisador | Dados e validação |
-| Especialista em Metodologia | Ferramentas práticas |
-| Revisor de Estilo | Português e gramática |
-| Advogado do Leitor | Clareza e relevância |
-| Coach de Escrita | Produtividade |
-| Marketing Editorial | Pitch e sinopse |
-| Auditor de Qualidade | Verificação de score |
-| Quality Guard | Eliminar vícios de IA |
-| Research Agent | Buscar referências |
-| Page Controller | Controle de paginação |
+O sistema conta com **13 agentes de IA**, cada um focado em um aspecto do livro:
+
+### Estrutura e Conteúdo
+| Agente | Função | Comando |
+|--------|--------|---------|
+| 📐 Arquiteto de Conteúdo | Estrutura, fluxo e organização | `/livro:arquiteto-conteudo` |
+| 📖 Narrador Especialista | Storytelling e narrativa | `/livro:narrador-especialista` |
+| 🔧 Especialista em Metodologia | Ferramentas práticas e acionáveis | `/livro:especialista-metodologia` |
+
+### Pesquisa e Validação
+| Agente | Função | Comando |
+|--------|--------|---------|
+| 🔬 Pesquisador | Dados, cases e referências técnicas | `/livro:pesquisador` |
+| 🌐 Research Agent | Buscar e validar referências online | `/livro:research-agent` |
+| ✅ Auditor de Qualidade | Verificação de score e critérios | `/livro:auditor-qualidade` |
+
+### Revisão e Qualidade
+| Agente | Função | Comando |
+|--------|--------|---------|
+| 📝 Editor-Chefe | Revisão editorial e decisão final | `/livro:editor-chefe` |
+| ✏️ Revisor de Estilo | Português, gramática e fluência | `/livro:revisor-estilo` |
+| 👁️ Advogado do Leitor | Clareza, relevância e acessibilidade | `/livro:advogado-leitor` |
+| 🧹 Quality Guard | Eliminar vícios de escrita de IA | `/livro:quality-guard` |
+
+### Produção e Publicação
+| Agente | Função | Comando |
+|--------|--------|---------|
+| 💪 Coach de Escrita | Produtividade e superação de bloqueios | `/livro:coach-escrita` |
+| 📣 Marketing Editorial | Pitch, sinopse e estratégia | `/livro:marketing-editorial` |
+| 📄 Page Controller | Controle de paginação e formatação | `/livro:page-controller` |
+
+> 💡 Use `/livro:time-completo` para ver todos os agentes disponíveis
 
 ## Relatório Final
 
@@ -164,24 +206,86 @@ Gerado automaticamente após validação:
 - Fontes: Helsinki, Lorimer No 2, Adobe Garamond Pro
   - Alternativas: Josefin Sans, EB Garamond (Google Fonts)
 
-## Integração com Claude Code
+## 🔌 Integração com Claude Code
 
-Este projeto foi desenvolvido para uso com Claude Code:
+Este projeto foi desenvolvido para uso com **Claude Code** (CLI oficial da Anthropic):
 
 ```bash
-# Na pasta do projeto
+# 1. Instalar Claude Code
+npm install -g @anthropic-ai/claude-code
+
+# 2. Abrir o projeto
+cd meu-livro
 claude
 
-# Usar agentes
-@editor-chefe revisar capitulo 1
-@narrador escrever introdução
-@quality-guard limpar texto
+# 3. Usar os agentes especializados
+/livro:editor-chefe revisar capítulo 1
+/livro:narrador-especialista melhorar storytelling
+/livro:quality-guard limpar vícios de IA do texto
+/livro:auditor-qualidade verificar score do capítulo
 ```
 
-## Licença
+### Skills Disponíveis
 
-MIT
+Além dos agentes, o projeto inclui skills para manipulação de documentos:
 
-## Autor
+| Skill | Função |
+|-------|--------|
+| `/pdf` | Criar, editar e extrair conteúdo de PDFs |
+| `/docx` | Manipular documentos Word |
+| `/xlsx` | Trabalhar com planilhas Excel |
+| `/pptx` | Criar apresentações PowerPoint |
+| `/book-formatter` | Aplicar formatação editorial ao livro |
+| `/quality-guard` | Detectar e corrigir vícios de IA |
+| `/research` | Pesquisar referências e citações |
 
-Fabio Marques
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1. Criar novo projeto
+mdl init "Liderança Transformacional"
+
+# 2. Desenvolver estrutura (com Claude Code)
+claude
+/livro:arquiteto-conteudo criar estrutura snowflake
+
+# 3. Escrever capítulos
+/livro:narrador-especialista escrever capítulo 1
+
+# 4. Revisar e validar
+mdl validar capitulos/ --quality-guard
+
+# 5. Exportar
+mdl formatar capitulos/ --formato docx
+```
+
+---
+
+## 📋 Roadmap
+
+- [x] CLI básica com comandos principais
+- [x] Sistema de validação com scoring
+- [x] Quality Guard (detecção de vícios de IA)
+- [x] 13 agentes especializados
+- [x] Formatação DOCX com estilos editoriais
+- [ ] Geração automática de capa
+- [ ] Integração com Amazon KDP
+- [ ] Dashboard web para acompanhamento
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Veja [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
+
+## 📄 Licença
+
+MIT © [Fabio Marques](https://github.com/arkfabio21)
+
+---
+
+<p align="center">
+  Feito com ❤️ para autores que querem usar IA de forma inteligente
+</p>
