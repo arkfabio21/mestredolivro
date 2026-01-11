@@ -29,12 +29,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fabiomarques/mestre-do-livro.git"
+    "url": "git+https://github.com/arkfabio21/mestredolivro.git"
   },
   "bugs": {
-    "url": "https://github.com/fabiomarques/mestre-do-livro/issues"
+    "url": "https://github.com/arkfabio21/mestredolivro/issues"
   },
-  "homepage": "https://github.com/fabiomarques/mestre-do-livro#readme",
+  "homepage": "https://github.com/arkfabio21/mestredolivro#readme",
   "engines": {
     "node": ">=18.0.0"
   },
