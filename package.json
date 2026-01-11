@@ -2,6 +2,7 @@
   "name": "mestre-do-livro",
   "version": "1.0.0",
   "description": "Sistema de escrita de livros com IA - Pipeline completo de concepção à publicação",
+  "type": "module",
   "main": "src/index.js",
   "bin": {
     "mestre-do-livro": "./bin/cli.js",

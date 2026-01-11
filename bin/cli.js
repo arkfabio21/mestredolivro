@@ -58,6 +58,7 @@ program
   .command('validar [arquivo]')
   .description('Validar capítulo ou livro completo')
   .option('-s, --score-minimo <numero>', 'Score mínimo para aprovação', '95')
+  .option('-q, --quality-guard', 'Executar Quality Guard (detectar vícios de IA)')
   .action(async (arquivo, options) => {
     const { validarCommand } = await import('../src/commands/validar.js');
     await validarCommand(arquivo, options);
